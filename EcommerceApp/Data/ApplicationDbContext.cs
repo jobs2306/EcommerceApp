@@ -12,7 +12,9 @@ namespace EcommerceApp.Data
         {
         }
 
-        // Agrega el DbSet para los productos
+        // Agrega el DbSet para los datos que se quieren manipular
         public DbSet<Producto> Productos { get; set; }
+        public DbSet<Proveedor> Proveedores { get; set; }
+        public DbSet<MovimientoInventario> MovimientosInventario { get; set; }
     }
 }
