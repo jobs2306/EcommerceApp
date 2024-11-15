@@ -64,7 +64,7 @@ namespace EcommerceApp.Controllers
             var result = await _productoService.UpdateProduct(id, updatedProduct);
             if (!result)
             {
-                return NotFound();
+                return BadRequest(new {error = "El producto no fue encontrado o el Proveedor no existe."});
             }
             return NoContent();
         }

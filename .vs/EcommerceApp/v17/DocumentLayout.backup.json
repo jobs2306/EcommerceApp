@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\PROG\\EcommerceApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\controllers\\proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\controllers\\proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\service\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\service\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\service\\proveedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\service\\proveedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\service\\interface\\iproductoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\service\\interface\\iproductoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\service\\interface\\iproveedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\service\\interface\\iproveedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Controllers\\ProductoController.cs",
-              "RelativeDocumentMoniker": "EcommerceApp\\Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Controllers\\ProductoController.cs",
-              "RelativeToolTip": "EcommerceApp\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAqwDYAAABlAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "IProveedorService.cs",
+              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Service\\Interface\\IProveedorService.cs",
+              "RelativeDocumentMoniker": "EcommerceApp\\Service\\Interface\\IProveedorService.cs",
+              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Service\\Interface\\IProveedorService.cs",
+              "RelativeToolTip": "EcommerceApp\\Service\\Interface\\IProveedorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T00:52:26.896Z",
+              "WhenOpened": "2024-11-14T02:01:17.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductoService.cs",
-              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Service\\ProductoService.cs",
-              "RelativeDocumentMoniker": "EcommerceApp\\Service\\ProductoService.cs",
-              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Service\\ProductoService.cs",
-              "RelativeToolTip": "EcommerceApp\\Service\\ProductoService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAtAAAAAAAAAA==",
+              "Title": "ProveedorService.cs",
+              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Service\\ProveedorService.cs",
+              "RelativeDocumentMoniker": "EcommerceApp\\Service\\ProveedorService.cs",
+              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Service\\ProveedorService.cs",
+              "RelativeToolTip": "EcommerceApp\\Service\\ProveedorService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T01:00:24.114Z",
+              "WhenOpened": "2024-11-14T00:36:32.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IProductoService.cs",
-              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Service\\Interface\\IProductoService.cs",
-              "RelativeDocumentMoniker": "EcommerceApp\\Service\\Interface\\IProductoService.cs",
-              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Service\\Interface\\IProductoService.cs",
-              "RelativeToolTip": "EcommerceApp\\Service\\Interface\\IProductoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ProveedorController.cs",
+              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Controllers\\ProveedorController.cs",
+              "RelativeDocumentMoniker": "EcommerceApp\\Controllers\\ProveedorController.cs",
+              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Controllers\\ProveedorController.cs",
+              "RelativeToolTip": "EcommerceApp\\Controllers\\ProveedorController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T01:00:07.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "EcommerceApp\\Models\\Producto.cs",
-              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Models\\Producto.cs",
-              "RelativeToolTip": "EcommerceApp\\Models\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T00:52:18.141Z",
+              "WhenOpened": "2024-11-14T00:39:06.89Z",
               "EditorCaption": ""
             }
           ]

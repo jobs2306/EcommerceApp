@@ -4,17 +4,15 @@ namespace EcommerceApp.Service.Interface
 {
     public interface IProductoService
     {
-       // Task<IEnumerable<Producto>> GetAllAsync();
-        Task<Producto> GetByIdAsync(int id);
+        //Agrear producto
         Task<Producto> AddAsync(Producto producto);
-        Task<Producto> UpdateAsync(Producto producto);
-        //Task DeleteAsync(int id);
-
-        //Nuevas funciones para mejor desempeño
+        //Obtener todos los productos
         Task<IEnumerable<Producto>> GetAllProducts();
+        //Obtener todos los productos por Id
         Task<Producto> GetProductById(int id);
-        Task CreateProduct(Producto newProduct);
+        //Actualizar un producto
         Task<bool> UpdateProduct(int id, Producto updatedProduct);
+        //Borrar un producto
         Task<bool> DeleteProduct(int id);
     }
 }

@@ -14,18 +14,6 @@ namespace EcommerceApp.Service
             _context = context;
         }
 
-        /*
-        public async Task<IEnumerable<Producto>> GetAllAsync()
-        {
-            return await _context.Productos.Include(p => p.Proveedor).ToListAsync();
-        }
-        */
-
-        public async Task<Producto> GetByIdAsync(int id)
-        {
-            return await _context.Productos.Include(p => p.Proveedor).FirstOrDefaultAsync(p => p.Id == id);
-        }
-
         public async Task<Producto> AddAsync(Producto producto)
         {
             // Verificar que el ProveedorId exista en la base de datos
@@ -39,25 +27,6 @@ namespace EcommerceApp.Service
             await _context.SaveChangesAsync();
             return producto;
         }
-
-        public async Task<Producto> UpdateAsync(Producto producto)
-        {
-            _context.Productos.Update(producto);
-            await _context.SaveChangesAsync();
-            return producto;
-        }
-
-        /*
-        public async Task DeleteAsync(int id)
-        {
-            var producto = await _context.Productos.FindAsync(id);
-            if (producto != null)
-            {
-                _context.Productos.Remove(producto);
-                await _context.SaveChangesAsync();
-            }
-        }
-        */
         
         //obtener los productos solo para leer
         public async Task<IEnumerable<Producto>> GetAllProducts()
@@ -71,22 +40,24 @@ namespace EcommerceApp.Service
             return await _context.Productos.FindAsync(id);
         }
 
-        //crear un nuevo producto
-        public async Task CreateProduct(Producto newProduct)
-        {
-            _context.Productos.Add(newProduct);
-            await _context.SaveChangesAsync();
-        }
-
         //Actualizar un producto
         public async Task<bool> UpdateProduct(int id, Producto updatedProduct)
         {
+            //se verifica que exista el producto
             var product = await _context.Productos.FindAsync(id);
             if (product == null) return false;
 
-            product.Nombre = updatedProduct.Nombre;
-            product.Precio = updatedProduct.Precio;
-            // Actualiza otros campos según sea necesario
+            //se verifica que exista el proveedor que se espera actualizar
+            var proveedorExiste = await _context.Proveedores.AnyAsync(p => p.Id == updatedProduct.ProveedorId);
+            if (!proveedorExiste) { return false; } 
+
+            if(!string.IsNullOrEmpty(updatedProduct.Nombre)) product.Nombre = updatedProduct.Nombre;
+            
+            if(updatedProduct.Precio != null) product.Precio = updatedProduct.Precio;
+            
+            if(updatedProduct.Stock != null) product.Stock = updatedProduct.Stock;
+
+            if(updatedProduct.ProveedorId != null && updatedProduct.ProveedorId != 0) product.ProveedorId = updatedProduct.ProveedorId;
 
             await _context.SaveChangesAsync();
             return true;

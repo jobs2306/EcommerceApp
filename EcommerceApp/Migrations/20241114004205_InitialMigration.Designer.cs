@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EcommerceApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241112002506_UpdateProductoModel1")]
-    partial class UpdateProductoModel1
+    [Migration("20241114004205_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -92,7 +92,6 @@ namespace EcommerceApp.Migrations
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Direccion")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Nombre")

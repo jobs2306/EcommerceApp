@@ -89,7 +89,6 @@ namespace EcommerceApp.Migrations
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Direccion")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Nombre")

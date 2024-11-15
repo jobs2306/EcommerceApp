@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using EcommerceApp.Models; // Asegúrate de tener este namespace para el modelo Producto
+using EcommerceApp.Models; 
 
 
 namespace EcommerceApp.Data
@@ -16,5 +16,21 @@ namespace EcommerceApp.Data
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Proveedor> Proveedores { get; set; }
         public DbSet<MovimientoInventario> MovimientosInventario { get; set; }
+
+        /*
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Producto>()
+
+                //.HasOne(p => p.Proveedor)
+
+                .HasOne<Proveedor>()
+                .WithMany()  // Suponiendo que Proveedor tiene una colección de Productos
+              //  .HasForeignKey(p => p.ProveedorId) 
+                .OnDelete(DeleteBehavior.Restrict);  // Evita eliminar un proveedor con productos asociados
+        }
+        */
     }
 }

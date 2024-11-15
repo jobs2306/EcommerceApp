@@ -9,25 +9,42 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
-//se coloca como comentario esta linea debido a que es para usar Microsoft SQL Server, pero se está
+//se coloca como comentario esta linea debido a que es para usar Microsoft SQL Server, pero se estï¿½
 //usando es MySql Server de Oracle 
 /*builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));*/
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+//Configuraciï¿½n para usar MySql server
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
+
+
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
-//Configuración para usar MySql server
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
 
 builder.Services.AddScoped<IProductoService, ProductoService>();
 builder.Services.AddScoped<IProveedorService, ProveedorService>();
 
 var app = builder.Build();
+
+// Aplica migraciones automï¿½ticamente al iniciar la aplicaciï¿½n
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<ApplicationDbContext>();
+        context.Database.Migrate(); // Aplica las migraciones pendientes a la base de datos
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error applying migrations: {ex.Message}");
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

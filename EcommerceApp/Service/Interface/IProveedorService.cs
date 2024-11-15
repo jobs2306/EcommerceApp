@@ -4,10 +4,17 @@ namespace EcommerceApp.Service.Interface
 {
     public interface IProveedorService
     {
-        Task<IEnumerable<Proveedor>> GetAllAsync();
-        Task<Proveedor> GetByIdAsync(int id);
+        //Agregar proveedor
         Task<Proveedor> AddAsync(Proveedor proveedor);
-        Task<Proveedor> UpdateAsync(Proveedor proveedor);
-        Task DeleteAsync(int id);
+        //Obtener proveedor
+        Task<IEnumerable<Proveedor>> GetAllProveedores();
+        //Obtener proveedor según Id
+        Task<Proveedor> GetProveedorById(int id);
+        //Actualizar proveedor 
+        Task<bool> UpdateProveedor(int id, Proveedor UpdatedProveedor);
+        //Borrar proveedor
+        Task<bool> DeleteProveedor(int id);
+        //verificar si un proveedor tiene productos asignados
+        bool VerifyProdInProveedor(int id);
     }
 }

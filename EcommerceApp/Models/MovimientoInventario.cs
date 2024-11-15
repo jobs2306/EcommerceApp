@@ -1,4 +1,7 @@
-﻿namespace EcommerceApp.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace EcommerceApp.Models
 {
     public class MovimientoInventario
     {
@@ -7,7 +10,6 @@
         public int Cantidad { get; set; }
         public DateTime Fecha { get; set; }
         public bool EsEntrada { get; set; }
-
-        public Producto Producto { get; set; }
+        public Producto? Producto { get; set; }
     }
 }

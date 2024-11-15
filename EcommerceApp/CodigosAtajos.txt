@@ -1,0 +1,27 @@
+#Codigos y atajos necesarios
+
+#Migraciones a MySql Oracle
+add-migration NameMigracion    #crea una migración nueva de base de datos
+Update-Database #Sube la base de datos al servidor configurado
+
+#Instalar paquetes en la ventana de comandos
+Install-Package NamePaquete
+
+#Docker
+docker-compose up --build  #para construir el contenedor
+docker-compose down #para eliminar el contenedor
+docker ps #verifica el nombre e información general de los contenedores ejecutandose
+docker stop <container_id> #para el contenedor
+docker logs <nombre_o_id_del_contenedor_webapp> #mira los losgs del contenedor
+dotnet ef migrations add InitialMigration #crea una migración para docker
+docker exec -it <container_id> /bin/sh #se conecta al contenedor para hacer acciones directas
+dotnet ef database update #actualiza la base de datos con la migracion realizada
+dotnet ef #verificar versión de dotnet-ef
+dotnet ef migrations list #lista las Migraciones
+dotnet ef migrations remove #Remueve las Migraciones
+docker inspect <webapp_container_id> #inspecciona un contenedor (se puede obtener la ipv4 del contenedor y más información)
+
+
+#curl
+curl http://localhost:8080/api/producto #se debe ejecutar en la carpeta donde esté el contenedor ejecutandose
+
