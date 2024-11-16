@@ -237,3 +237,11 @@ C:\PROG\EcommerceApp\EcommerceApp\obj\Debug\net8.0\refint\EcommerceApp.dll
 C:\PROG\EcommerceApp\EcommerceApp\obj\Debug\net8.0\EcommerceApp.pdb
 C:\PROG\EcommerceApp\EcommerceApp\obj\Debug\net8.0\EcommerceApp.genruntimeconfig.cache
 C:\PROG\EcommerceApp\EcommerceApp\obj\Debug\net8.0\ref\EcommerceApp.dll
+C:\PROG\EcommerceApp\EcommerceApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\PROG\EcommerceApp\EcommerceApp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\PROG\EcommerceApp\EcommerceApp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\PROG\EcommerceApp\EcommerceApp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\PROG\EcommerceApp\EcommerceApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\PROG\EcommerceApp\EcommerceApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\PROG\EcommerceApp\EcommerceApp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\PROG\EcommerceApp\EcommerceApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

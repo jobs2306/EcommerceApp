@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|c:\\prog\\ecommerceapp\\ecommerceapp\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D04D8A9-6092-4398-8F67-821EA26E1564}|EcommerceApp\\EcommerceApp.csproj|solutionrelative:ecommerceapp\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +30,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "EcommerceApp\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Models\\LoginModel.cs",
+              "RelativeToolTip": "EcommerceApp\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T20:48:55.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "EcommerceApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "EcommerceApp\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAwDIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T20:24:20.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EcommerceApp\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "EcommerceApp\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAEoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T20:11:35.184Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,22 +79,22 @@
               "RelativeDocumentMoniker": "EcommerceApp\\Program.cs",
               "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Program.cs",
               "RelativeToolTip": "EcommerceApp\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T17:58:21.695Z",
+              "WhenOpened": "2024-11-16T18:59:27.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "EcommerceApp\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "EcommerceApp\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T17:57:56.59Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\PROG\\EcommerceApp\\EcommerceApp\\appsettings.json",
+              "RelativeDocumentMoniker": "EcommerceApp\\appsettings.json",
+              "ToolTip": "C:\\PROG\\EcommerceApp\\EcommerceApp\\appsettings.json",
+              "RelativeToolTip": "EcommerceApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-16T15:43:12.546Z",
               "EditorCaption": ""
             }
           ]

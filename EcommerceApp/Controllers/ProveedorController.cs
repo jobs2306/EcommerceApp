@@ -4,9 +4,11 @@ using EcommerceApp.Service;
 using EcommerceApp.Service.Interface;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EcommerceApp.Controllers
 {
+    //[Authorize]
     [ApiController]
     [Route("api/[controller]")]
 
